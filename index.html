@@ -4,23 +4,32 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no">
       <link href="css/style.css" rel="stylesheet" type="text/css">
-      <link href="css/style.css" rel="stylesheet" type="text/css">
-
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <link href="quiz/css/reset.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="quiz/css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="quiz/css/master.css" media="screen" rel="stylesheet" type="text/css">
 
   </head>
   <body>
   <header data-role="header" id="header">
       <nav class="menu">
           <ul>
+
+              <li>
+                  <a href="#section-section-history">
+                  <span>
+                    <h2>1954</h2>
+                  </span></a>
+              </li>
               <li>
                   <a href="#section-section1">
                   <span>
-                    <h2>1989</h2>
+                    <h2>1973</h2>
                   </span></a>
               </li>
               <li>
                   <a href="#section-section2"><span>
-                    <h2>1999</h2>
+                    <h2>1989</h2>
 
                   </span></a>
               </li>
@@ -36,6 +45,12 @@
                       <h2>1999</h2>
                     </span></a>
               </li>
+              <li>
+                  <a href="#section-section-quiz">
+                    <span>
+                      <h2>Quiz</h2>
+                    </span></a>
+              </li>
           </ul>
       </nav>
   </header>
@@ -49,10 +64,10 @@
 </section>
 <section data-role="section" id="section-section-history">
 <h3 class="heading">A Bit about Groening</h3>
-<img class="pic"src="gif/homer.gif"alt="Homer Simpson">
-<div class="shades">
-  <img src="img/shadow.png"alt="Shadow">
-</div>
+<div class="pic">
+    <img id="homer"src="gif/homer.gif"alt="Homer">
+    <img class="shadow"src="img/shadow.png"alt="Shadow">
+    </div>
       <ul class="traits">
     <li>Major Characters:
     <li>Major Topics</li>
@@ -67,11 +82,11 @@
 
   <section data-role="section" id="section-section1">
     <h3 class="heading">The Simpsons</h3>
-    <img class="pic"src="gif/homer.gif"alt="Homer Simpson">
-    <div class="shades">
-      <img src="img/shadow.png"alt="Shadow">
+<div class="pic">
+   <img id="homer"src="gif/homer.gif"alt="Homer">
+    <img class="shadow"src="img/shadow.png"alt="Shadow">
     </div>
-          <ul class="traits">
+      <ul class="traits">
         <li>Major Characters:
         <li>Major Topics</li>
         <li>Run-time</li>
@@ -84,10 +99,10 @@
   </section>
   <section data-role="section" id="section-section2">
     <h3 class="heading">Futurama</h3>
-    <img class="pic"src="gif/homer.gif"alt="Homer Simpson">
-    <div class="shades">
-      <img src="img/shadow.png"alt="Shadow">
-    </div>
+    <div class="pic">
+      <img id="bender"src="gif/bender.gif_c200"alt="Bender">
+        <img class="shadow"src="img/shadow.png"alt="Shadow">
+        </div>
           <ul class="traits">
         <li>Major Characters:
         <li>Major Topics</li>
@@ -101,10 +116,10 @@
   </section>
   <section data-role="section" id="section-section3">
     <h3 class="heading">Futurama</h3>
-    <img class="pic"src="gif/homer.gif"alt="Homer Simpson">
-    <div class="shades">
-      <img src="img/shadow.png"alt="Shadow">
-    </div>
+    <div class="pic">
+        <img id="fry"src="gif/fry.gif"alt="Fry">
+        <img class="shadow"src="img/shadow.png"alt="Shadow">
+        </div>
 
       <ul class="traits">
         <li>Major Characters:
@@ -119,9 +134,9 @@
   </section>
   <section data-role="section" id="section-section4">
       <h3 class="heading">Futurama</h3>
-      <img class="pic"src="gif/homer.gif"alt="Homer Simpson">
-      <div class="shades">
-        <img src="img/shadow.png"alt="Shadow">
+      <div class="pic">
+          <img id="fry"src="gif/fry.gif"alt="Fry">
+          <img class="shadow"src="img/shadow.png"alt="Shadow">
         <button class="go-to-1">start</button>
       </div>
         <ul class="traits">
@@ -137,6 +152,42 @@
 
     </section>
 
+    <section data-role="section" id="section-section-quiz">
+        <body id="slickQuiz">
+          <h3 class="heading">Quiz</h3>
+
+
+        <div class="quizArea">
+            <div class="quizHeader">
+                <!-- where the quiz main copy goes -->
+
+                <a class="button startQuiz" href="#">Get Started!</a>
+            </div>
+
+            <!-- where the quiz gets built -->
+        </div>
+
+        <div class="quizResults">
+			<div id="resultsHeader">
+			<h3>YOU GOT:</h3>
+			</div>
+            <!--<h3 class="quizScore">You Scored: <span> where the quiz score goes </span></h3>-->
+
+            <!---<h3 class="quizLevel"><strong>Ranking:</strong> <span> where the quiz ranking level goes </span></h3>-->
+			<div id="resultsBody">
+				<div id="resultDesc">
+					<div id="descLong">
+					</div>
+				</div>
+				<div id="resultPicture">
+				</div>
+			</div>
+
+            <!--<div class="quizResultsCopy">
+                 where the quiz result copy goes
+            </div>-->
+        </div>
+      </section>
 
   <footer data-role="footer" id="footer">
 
@@ -160,7 +211,13 @@
 
   <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
   <script type="text/javascript" src="js/jquery.horizonScroll.js"></script>
+  <script src="quiz/js/slickQuiz-config.js"></script>
+  <script src="quiz/js/slickQuiz.js"></script>
+  <script src="quiz/js/master.js"></script>
   <script src="js/scripts.js"></script>
+
+
+
 
 
 
