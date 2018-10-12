@@ -79,8 +79,11 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
+/*ul{
+  background-color:#CFDDDB;
+  background-color-opacity: 50%;
+}*/
 .info{
   grid-area: info;
   display: flex;
@@ -103,10 +106,10 @@ width:70%;
   width:100%;
 }
 #homer, #bender, #fry, #binky, #luci{
-  outline-style: solid;
+
 }
 #bender{
-    width:80%;
+    width:70%;
 }
 #fry{
   width:100%;
