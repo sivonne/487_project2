@@ -106,7 +106,10 @@ width:70%;
     width:100%;
 }
 #fry{
-    width:100%;
+  width:100%;
+}
+#binky{
+  width:60%;
 }
 .shadow{
   width:80%;
@@ -139,7 +142,7 @@ button{
 }
 
 #section-section1 {
-    background: #F7D02C;
+    background: white;
 }
 
 #section-section2 {
