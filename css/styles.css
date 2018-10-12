@@ -41,12 +41,11 @@ padding-top: 20%;
   display:flex;
 
 } */
-.date {
+/*.date {
   grid-area: date;
   }
-  .name{
+.name{
     grid-area: name;
-
   }
 .shades{
   grid-area: shades;
@@ -60,7 +59,7 @@ padding-top: 20%;
 .info {
   grid-area: info;
 
-  }
+  }*/
 /* Stack the layout on small devices/viewports. */
 /*@media all and (max-width: 575px) {
   #slide2 {

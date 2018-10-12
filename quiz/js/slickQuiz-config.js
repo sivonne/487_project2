@@ -19,12 +19,12 @@ var quizJSON = {
         { // Question 1 - Multiple Choice, Single True Answer
             "q": "Pick a color",
             "a": [
-                {"option": "option1",      "correct": true, "value":"2", "image": "quiz-thumbimg-emotion1.jpg"},
-                {"option": "option2",     "correct": true, "value":"5", "image": "quiz-thumbimg-emotion2.jpg"},
-                {"option": "option3",      "correct": true, "value":"0", "image": "quiz-thumbimg-emotion3.jpg"},
-				{"option": "option4",      "correct": true, "value":"3", "image": "quiz-thumbimg-emotion4.jpg"},
-                {"option": "option5",     "correct": true, "value":"1", "image": "quiz-thumbimg-emotion5.jpg"},
-				{"option": "option6",     "correct": true, "value":"4", "image": "quiz-thumbimg-emotion6.jpg"} // no comma here
+                {"option": "option1",      "correct": true, "value":"2", "image": "../quiz/images/quiz-thumbimg-emotion1.jpg"},
+                {"option": "option2",     "correct": true, "value":"5", "image": "../quiz/images/quiz-thumbimg-emotion2.jpg"},
+                {"option": "option3",      "correct": true, "value":"0", "image": "../quiz/images/quiz-thumbimg-emotion3.jpg"},
+				{"option": "option4",      "correct": true, "value":"3", "image": "../quiz/images/quiz-thumbimg-emotion4.jpg"},
+                {"option": "option5",     "correct": true, "value":"1", "image": "../quiz/images/quiz-thumbimg-emotion5.jpg"},
+				{"option": "option6",     "correct": true, "value":"4", "image": "../quiz/images/quiz-thumbimg-emotion6.jpg"} // no comma here
             ],
         },
         { // Question 2 - Multiple Choice, Multiple True Answers, Select Any

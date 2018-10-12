@@ -223,7 +223,7 @@
                         var question = questions[i];
 
                         var questionHTML = $('<li class="' + questionClass +'" id="question' + (count - 1) + '" selectedPointValue="0"></li>');
-						
+
                         if (plugin.config.displayQuestionCount) {
                             questionHTML.append('<div class="' + questionCountClass + '">' +
                                 plugin.config.questionCountText
@@ -239,17 +239,17 @@
                         } else {
                             formatQuestion = question.q;
                         }
-						
+
 						var html = '';
 						for (var i = 0; i < 7; i++) {
 							html += "<li></li>";
 						}
-						
+
 						var breadCrumb = '<div id="breadcrumb">'+html+'</div>';
 						questionHTML.append('<div id="questionHeader"><h3>' + formatQuestion + '</h3>'+breadCrumb+'</div>');
-						
-					
-						
+
+
+
                         // Count the number of true values
                         var truths = 0;
                         for (i in question.a) {
@@ -286,11 +286,11 @@
                                 optionId = inputName + '_' + i.toString();
 
                                 // If question has >1 true answers and is not a select any, use checkboxes; otherwise, radios
-								var optionName = '<div id="answerOption">'+answer.option+'</div>';								
+								var optionName = '<div id="answerOption">'+answer.option+'</div>';
                                 var input = '<input id="' + optionId + '" name="' + inputName +
                                             '" type="' + inputType + '" /> ';
-											
-								var checkboxDiv = '<div id="answerCheckBox"><img src="images/checkmark.png"/></div>';
+
+								var checkboxDiv = '<div id="answerCheckBox"><img src="quiz/images/checkmark.png"/></div>';
 
                                 //var optionLabel = '<label for="' + optionId + '">' + answer.option + '</label>';
 
@@ -363,7 +363,7 @@
                 key = internal.method.getKey (1); // how many notches == how many jQ animations you will run
                 keyNotch = internal.method.getKeyNotch; // a function that returns a jQ animation callback function
                 kN = keyNotch; // you specify the notch, you get a callback function for your animation
-				
+
                 function start(options) {
                     var firstQuestion = $(_element + ' ' + _questions + ' li').first();
 					if (firstQuestion.length) {
@@ -371,7 +371,7 @@
                             if (options && options.callback) options.callback ();
                         });
                     }
-					
+
                 }
 
                 if (plugin.config.skipStartButton || $quizStarter.length == 0) {
@@ -441,9 +441,9 @@
                     selectAny     = questions[questionIndex].select_any ? questions[questionIndex].select_any : false;
 
                 //answerLIs.addClass(incorrectResponseClass);
-				
-				
-				
+
+
+
                 // Collect the true answers needed for a correct response
                 var trueAnswers = [];
 				var pointValues = [];
@@ -451,7 +451,7 @@
                     if (answers.hasOwnProperty(i)) {
                         var answer = answers[i],
                             index  = parseInt(i, 10);
-							
+
 					    pointValues.push(answer.value);
 
                         if (answer.correct) {
@@ -460,7 +460,7 @@
                         }
                     }
                 }
-				
+
 				// Collect the values for each answer in an array
 
 
@@ -490,7 +490,7 @@
                 } else {
                     questionLI.addClass(incorrectClass);
                 }
-				
+
 				//Store the selected answer's value
 				questionLI.attr("selectedPointValue",pointValues[selectedAnswers[0]]);
 
@@ -518,7 +518,7 @@
 
             // Moves to the next question OR completes the quiz if on last question
             nextQuestion: function(nextButton, options) {
-				
+
                 var key, keyNotch, kN;
                 key = internal.method.getKey (1); // how many notches == how many jQ animations you will run
                 keyNotch = internal.method.getKeyNotch; // a function that returns a jQ animation callback function
@@ -527,12 +527,12 @@
                 var currentQuestion = $($(nextButton).parents(_question)[0]),
                     nextQuestion    = currentQuestion.next(_question),
                     answerInputs    = currentQuestion.find('input:checked');
-					
+
 				//Apply background images for next question
 				var questionId = nextQuestion.attr('id');
 				for (var i = 0; i < 6; i++) {
 					var answerLi = $('li[id="'+questionId+'_'+i+'"]');
-					
+
 					var imageName = $('li[id="'+questionId+'_'+i+'"]').attr('image');
 					var bg = "url(images/"+imageName+")";
 					$('li[id="'+questionId+'_'+i+'"]').css("background-image",bg);
@@ -541,7 +541,7 @@
 				//Highlight current breadcrumb
 				var current = $('li[id="'+questionId+'"] .questionCount .current').html() - 1;
 				$('li[id="'+questionId+'"] #questionHeader #breadcrumb li:eq('+current+')').css('background-color','white');
-				
+
 
                 // If response messaging has been disabled or moved to completion,
                 // make sure we have an answer if we require it, let checkAnswer handle the alert messaging
@@ -630,15 +630,15 @@
                 if (plugin.config.scoreAsPercentage) {
                     score = (score / questionCount).toFixed(2)*100 + "%";
                 }
-				
+
 				var totalPointValue = 0;
 				//calclulate the total pointValue for selected answers
 				$( ".question" ).each(function( index ) {
 					totalPointValue += parseFloat($(this).attr('selectedPointValue'));
 				});
-				
 
-				
+
+
                 if (plugin.config.disableScore) {
                     $(_quizScore).remove()
                 } else {
@@ -680,18 +680,18 @@
 						}
 
                         levelText = $.isNumeric(levelRank) ? levels[levelRank] : '';*/
-					
+
 					//Add short description
 					$('#resultsHeader').append('<h3>'+level.descShort+'</h3>');
 					$('#resultsBody #resultDesc #descLong').html(level.descLong);
 					var bg = "url(images/"+level.image+")";
 					$('#resultsBody #resultPicture').css('background-image',bg);
-					
-					
+
+
                    // $(_quizLevel + ' span').html(levelText);
                    // $(_quizLevel).addClass('level' + levelRank);
-					
-	
+
+
                 }
 
                 $quizArea.fadeOut(300, function() {

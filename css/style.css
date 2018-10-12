@@ -66,19 +66,28 @@ section {
   'hd hd hd'/*heading*/
   'trait pic info'/*nav menu*/
 }
-.heading, .traits
 .heading{
   grid-area: hd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .traits{
   grid-area: trait;
   display: flex;
-  align-items:left;
-  justify-content:space-around;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+
 }
 .info{
   grid-area: info;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
 .pic{
   grid-area: pic;
@@ -87,10 +96,16 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+#groening{
+width:70%;
+}
 #homer{
   width:100%;
 }
 #bender{
+    width:100%;
+}
+#fry{
     width:100%;
 }
 .shadow{
@@ -116,10 +131,15 @@ button{
 
 
 }
+#section-section0 {
+    background: #F7D02C;
+}
+#section-section-history{
+    background: #F7B7D2;
+}
 
 #section-section1 {
     background: #F7D02C;
-
 }
 
 #section-section2 {
@@ -160,4 +180,15 @@ button{
 
 .horizon-next {
     right: 25%;
+}
+
+
+/*Quiz*/
+
+#section-section-quiz{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
