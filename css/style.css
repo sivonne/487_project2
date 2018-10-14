@@ -10,6 +10,9 @@ html, body {
 section, header, footer, nav, div, span, ul, li, a {
     box-sizing: border-box;
 }
+.nav-h{
+  font-family: 'Rajdhani', sans-serif;
+}
 
 header {
     position: fixed;
@@ -20,6 +23,8 @@ header {
 }
 
 header nav {
+  background:#4375DC;
+
 }
 
 header ul {
@@ -56,6 +61,40 @@ section {
     padding: 75px 0 0 0;
     margin: 0;
 }
+button{
+  background:#204CA8;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border-style: none;
+  border-radius: 10px;
+
+}
+#site-title{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 28px;
+  padding-bottom: 2%;
+
+
+}
+#groening-h{
+  font-family: 'Teko', sans-serif;
+}
+#life-h{
+  font-family: 'Indie Flower', cursive;
+}
+#simpsons-h{
+  font-family: 'Patrick Hand SC', cursive;
+}
+#futurama-h{
+  font-family: 'Press Start 2P', cursive;
+}
+#disenchantment-h{
+  font-family: 'Fredericka the Great', cursive;
+}
+#groening-h, #life-h, #simpsons-h, #futurama-h, #disenchantment-h {
+  font-size:40px;
+}
 
 #section-groening, #section-life, #section-simpsons,
 #section-futurama, #section-disenchantment{
@@ -72,6 +111,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
 }
 .traits{
   grid-area: trait;
@@ -80,18 +120,22 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-/*ul{
-  background-color:#CFDDDB;
-  background-color-opacity: 50%;
-}*/
+.trait-list, .info-p {
+  background: rgba(127, 126, 123, 0.8);
+  padding:10%;
+  margin-bottom: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .info{
   grid-area: info;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
+
 .pic{
   grid-area: pic;
   display: flex;
@@ -105,22 +149,26 @@ width:70%;
 #homer{
   width:100%;
 }
-#homer, #bender, #fry, #binky, #luci{
+#homer, #bender, #fry, #binky{
+width:100%;
+}
 
-}
-#bender{
-    width:70%;
-}
-#fry{
-  width:100%;
-}
 #binky{
   width:60%;
   outline-style: dotted;
 }
+#bender{
+width:70%;
+}
+#luci{
+width:50%;
+}
+
 .shadow{
   width:80%;
   padding-bottom: 2%;
+  opacity:50%;
+  z-index:10;
 
 }
 
@@ -136,8 +184,8 @@ button{
 
 
 }
-#section-main {
-    background: orange;
+#section-main{
+    background: #EBC624;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,7 +202,7 @@ button{
 
 #section-simpsons{
   background-image: url(../img/house.png);
-      background-repeat:no-repeat;
+  background-repeat:no-repeat;
   background-size: cover;
 }
 
@@ -167,7 +215,9 @@ button{
 #section-disenchantment {
   background-image: url(../img/castle.jpg);
   background-repeat:no-repeat;
-  background-size: cover;}
+  background-size: cover;
+}
+
 #section-quiz{
   z-index:10;
 }
@@ -200,14 +250,16 @@ button{
 
 /*Quiz*/
 
-#section-section-quiz{
+#section-quiz{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
 }
+#section-sources{
 
+}
 
 
 /*House img link: https://ecodiario.eleconomista.es/viralplus/noticias/9317872/08/18/www.liveramp.com/service-privacy-policy/www.indexexchange.com/privacy
@@ -217,3 +269,6 @@ Luci img: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=
 Castle img: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwik_uyK-f_dAhWBwFMKHVPyB7gQjRx6BAgBEAU&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt7177814%2Fmediaviewer%2Frm2331932672&psig=AOvVaw2Gy6VAgtYidMQ7VmsXTRX8&ust=1539400746141289
 
 Bender gif: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjcjsqp-P_dAhWK61MKHb2NC5AQjRx6BAgBEAU&url=https%3A%2F%2Fgifer.com%2Fen%2F2vDa&psig=AOvVaw0_qyQPNB_P7n0tdUH7dyPM&ust=1539400550880683
+
+CSS opacity:
+https://www.w3schools.com/cssref/css3_pr_opacity.asp

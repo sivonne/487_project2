@@ -7,7 +7,7 @@ $(document).ready(function(){
 //$('section').horizon({swipe: false});
 
 $(document).on('click', '.go-to-1', function () {
-    $(document).horizon('scrollTo', 'section-section-history');
+    $(document).horizon('scrollTo', 'section-groening');
 
 
 
