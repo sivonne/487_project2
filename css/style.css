@@ -12,9 +12,7 @@ html, body {
 section, header, footer, nav, div, span, ul, li, a {
     box-sizing: border-box;
 }
-.nav-h{
-  font-family: 'Rajdhani', sans-serif;
-}
+
 
 header {
     position: fixed;
@@ -26,7 +24,7 @@ header {
 
 header nav {
   background:#4375DC;
-
+  font-size: 10px;
 }
 
 header ul {
@@ -43,7 +41,7 @@ header ul li {
 header ul a {
     font-weight: 700;
     text-decoration: none;
-    color: #4d4d4d;
+    color:white;
     height: 50px;
     display: block;
     position: relative;
@@ -79,6 +77,62 @@ button{
   padding-bottom: 1%;
   margin-bottom: 7.5%;
 }
+/*Responsive Nav Bar*/
+.Navbar {
+  display: flex;
+  padding: 16px;
+  font-family: sans-serif;
+  color: white;
+}
+.Navbar__Link {
+  padding-right: 8px;
+}
+.Navbar__Items {
+  display: flex;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.Navbar__Items--right {
+  margin-left:auto;
+}
+.Navbar__Link-toggle {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+.Navbar__Items {
+    display:none;
+  }
+.Navbar__Items--right {
+    margin-left:0;
+  }
+.Navbar__ToggleShow {
+    display: flex;
+  }
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   }
+}
+#logo{
+  width:20%;
+}
+
+
+
+
+
+
+
 
 #site-title{
   font-family: 'Rajdhani', sans-serif;
@@ -287,22 +341,24 @@ width:55%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  background:#EBC624;
 }
 #section-sources{
-  box-sizing: content-box;
-  background: #EBC624;
+
+  background: #204CA8;
   display:grid;
-  margin:5%;
-  font-size: 4px;
+  font-size: 3px;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;/*sets height of rows*/
+  grid-template-rows: 1fr 1fr 1fr 1fr;/*sets height of rows*/
   grid-template-areas:/*designates areas to certain sections*/
+  'heading'
   'sources'/*heading*/
   'images'/*nav menu*/
   'coding'
 }
-
+#source-h{
+  grid-area:heading;
+}
 #information{
   grid-area: sources;
 
