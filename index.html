@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <link href="quiz/css/reset.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="quiz/css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+<!--  <link href="dist/css/perspectiveRules.css" rel="stylesheet" />-->
   <link href="quiz/css/master.css" media="screen" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Indie+Flower|Itim|Monoton|Patrick+Hand+SC|Poiret+One|Press+Start+2P|Rajdhani:400,700|Teko" rel="stylesheet">
 </head>
@@ -32,7 +32,7 @@
             <li>
               <a href="#section-life">
                 <span>
-                  <h2 class="nav-h">1980</h2>
+                  <h2 class="nav-h">1977</h2>
                 </span></a>
               </li>
               <li>
@@ -71,9 +71,11 @@
               <div class="horizon-prev"><img src="img/l-arrow.png"></div>
               <div class="horizon-next"><img src="img/r-arrow.png"></div>
 
+
               <section data-role="section" id="section-main">
                 <h1 id="site-title">the evolution of Matt Groening's animations</h1>
                 <button class="go-to-1">start</button>
+                <h4 id="directions">(scroll, use arrow buttons or nav to navigate)</h4>
               </section>
               <section data-role="section" id="section-groening">
                 <h3 class="heading"id="groening-h">A Bit about Groening</h3>
@@ -84,37 +86,38 @@
                 <div class="traits">
                   <ul class="trait-list">
                     <li>Born: February 15, 1953
-                      <li>Major Works: Life in Hell (1980–2012),The Simpsons (1989–present), Futurama (1999–2003, 2010–13), Disenchantment (2018-present)</li>
+                      <li>Major Works: Life in Hell (1977–2012),The Simpsons (1989–present), Futurama (1999–2003, 2010–13), Disenchantment (2018-present)</li>
                       <li>Run-time: Still running</li>
-                      <li>Popularity: ___/____ on _______ as of 2018</li>
-                      <li>Co-creators: __________</li>
+                      <li>Education: Studied Journalism at Evergreen State College, graduated in 1977</li>
+                      <li>Co-creators: James L. Brooks, Sam Simon</li>
                     </ul>
                   </div>
                   <div class="info">
-                    <p class="info-p">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>
+                    <ul class="info-list">
+                      Groening worked as a music journalist until he decided to pursue his artistic interests, starting first with the comic Life is Hell. Some of his main inspirations for his art were Walt Disney and Charles M. Schulz. After being asked by James L. Brooks to make the Life in Hell comic a TV strip for the Tracey Ullman Show, Groening decided to make the Simpsons, an original show based on his own family.
+                    </ul>
                   </div>
                 </section>
                 <section data-role="section" id="section-life">
-                  <h3 class="heading"id="life-h">Life is Hell</h3>
+                  <h3 class="heading"id="life-h">Life in Hell</h3>
                   <div class="pic">
                     <img id="binky"src="img/binky.jpg"alt="Binky">
                     <img class="shadow"src="img/shadow.png"alt="Shadow">
                   </div>
-                  <div class="traits">
-                    <ul class="trait-list">
-                      <li>Major Characters:
-                        <li>Major Topics</li>
-                        <li>Run-time: 1980-2012 </li>
-                        <li>Popularity</li>
-                        <li>Co-creators</li>
-                      </ul>
-                    </div>
-                    <div class="info">
-                      <p class="info-p">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>
+                  <ul class="trait-list">
+                    <li>Major Characters: <br />Binky, Akbar, Jeff, </li>
+                    <li>Major Topics: <br />worklife, life in Los Angeles</li>
+                    <li>Release Dates: <br />In 1977, Groening self-published a comic book and sold them at a local record store before they were taken on by Wet Magazine in 1978.</li>
+
+                    </ul>
+                  </div>
+                  <div class="info">
+                    <ul class="info-list">
+                      <li>Run-time: 1977-2012</li>
+                      <li>Number of Installments: 1,669 (in over 250 publications)</li>
+                      <li>Notable Fans: James L. Brooks (who later prompted Groening to create The Simpsons)</li>
+
+                    </ul>
                   </div>
                   </section>
                   <section data-role="section" id="section-simpsons">
@@ -125,21 +128,25 @@
                     </div>
                     <div class="traits">
                       <ul class="trait-list">
-                        <li>Major Characters: Homer, Marge, Lisa, Bart, and Maggie Simpson, Milhouse VanHouten, Principal Skinner, Sideshow Bob, Krusty the Klown
-                          <li>Major Topics: family life, irony, school, work, mother-/fatherhood, gender roles, stereotypes</li>
-                          <li>Run-time: Still running</li>
-                          <li>Popularity: ___/____ on _______ as of 2018</li>
-                          <li>Co-creators: __________</li>
+                        <li>Major Characters: <br />Homer, Marge, Lisa, Bart, and Maggie Simpson, Milhouse VanHouten, Principal Skinner, Sideshow Bob, Krusty the Klown</li>
+                        <li>Major Topics: <br />family life, irony, school, work, mother-/fatherhood, gender roles, stereotypes</li>
+                        <li>Date of Release: <br />December 17, 1989</li>
                         </ul>
                       </div>
                       <div class="info">
-                        <p class="info-p">
-                        After being asked by James L. Brooks to make the Life in Hell comic a TV strip for the Tracey Ullman Show, Groening decided to make the Simpsons, an original show based on his own family.(source)
+                        <ul class="info-list">
+                          <li>Run-time: Still running</li>
+                          <li>Number of Episodes: 664</li>
+                          <li>Popularity: 8.7/10 on IMDb</li>
+                          <li>Co-creators: <br />James L. Brooks, Sam Simon</li>
+                          <li>Star Roles:<br /> Dan Castellaneta, Nancy Cartwright, Harry Shearer</li>
+
+                        <!--After being asked by James L. Brooks to make the Life in Hell comic a TV strip for the Tracey Ullman Show, Groening decided to make the Simpsons, an original show based on his own family.(source)
 
                         In 1990, had first of now 20+ Emmys awarded.
                         In 2007, The Simpsons Movie came out.
-                        In 2009, "it became the longest-running prime-time series in American television history" (Britannica).
-                      </p>
+                        In 2009, "it became the longest-running prime-time series in American television history" (Britannica).-->
+                      </ul>
                     </div>
                     </section>
                     <section data-role="section" id="section-futurama">
@@ -150,17 +157,19 @@
                       </div>
                       <div class="traits">
                         <ul class="trait-list">
-                          <li>Major Characters:
-                            <li>Major Topics</li>
-                            <li>Run-time</li>
-                            <li>Popularity</li>
-                            <li>Co-creators</li>
+                          <li>Major Characters: <br />Fry, Leela, Bender</li>
+                          <li>Major Topics: <br />time travel, love, robots, scientists, space</li>
+                          <li>Date of Release: <br />March 28, 1999</li>
                           </ul>
                         </div>
                         <div class="info">
-                          <p class="info-p">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        </p>
+                          <ul class="info-list">
+                            <li>Run-time: 1999-2013</li>
+                            <li>Number of Episodes: 124</li>
+                            <li>Popularity: 8.5/10 on IMDb</li>
+                            <li>Co-creators: David X. Cohen</li>
+                            <li>Star Roles:<br /> Billy West, John DiMaggio, Katey Sagal </li>
+                        </ul>
                       </div>
                       </section>
                       <section data-role="section" id="section-disenchantment">
@@ -171,74 +180,187 @@
                         </div>
                         <div class="traits">
                           <ul class="trait-list">
-                            <li>Major Characters:
-                              <li>Major Topics</li>
-                              <li>Run-time</li>
-                              <li>Popularity</li>
-                              <li>Co-creators</li>
+                            <li>Major Characters: <br />Bean, Luci, Elfo</li>
+                            <li>Major Topics: <br />adventure, true love, feeling different, temptations, medieval</li>
                             </ul>
                           </div>
                           <div class="info">
-                            <p class="info-p">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                          </p>
+                            <ul class="info-list">
+                              <li>Date of Release: <br />August 17, 2018</li>
+                              <li>Run-time: 2018-present</li>
+                              <li>Number of Episodes: 20</li>
+                              <li>Popularity: 7.3/10 on IMDb</li>
+                              <li>Co-creators: Josh Weinstein</li>
+                              <li>Star Roles:<br />  Robin Atkin Downes, Abbi Jacobson, Eric André </li>
+                          </ul>
                         </div>
                         </section>
 
                         <section data-role="section" id="section-quiz">
-                          <div id="slickQuiz">
-                            <h3 class="heading">Quiz</h3>
-                            <div class="quizArea">
-                              <div class="quizHeader">
-                                <!-- where the quiz main copy goes -->
 
-                                <a class="button startQuiz" href="#">Get Started!</a>
-                              </div>
-
-                              <!-- where the quiz gets built -->
-                            </div>
-                            <div class="quizResults">
-                              <div id="resultsHeader">
-                                <h3>YOU GOT:</h3>
-                              </div>
-                              <h3 class="quizScore">You Scored: <span> where the quiz score goes </span></h3>
-                              <h3 class="quizLevel"><strong>Ranking:</strong> <span> where the quiz ranking level goes </span></h3>
-                              <div id="resultsBody">
-                                <div id="resultDesc">
-                                  <div id="descLong">
-                                  </div>
-                                </div>
-                                <div id="resultPicture">
-                                </div>
-                              </div>
-                              <div class="quizResultsCopy">where the quiz result copy goes
-                              </div>
-                            </div>
+                            <div id="quizzie">
+                            <h1>What Character Are You?</h1>
+                              <ul class="quiz-step step1 current"id="quiz-list">
+                                  <li class="question">
+                                      <div class="question-wrap">
+                                          <h2>Question #1: Are you more...</h2>
+                                      </div>
+                                  </li>
+                                  <li class="quiz-answer low-value" data-quizIndex="2">
+                                      <div class="answer-wrap">
+                                          <p class="answer-text">Funny</p>
+                                      </div>
+                                  </li>
+                                  <li class="quiz-answer high-value" data-quizIndex="4">
+                                      <div class="answer-wrap">
+                                          <p class="answer-text">Serious?</p>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="quiz-step step2">
+                                  <li class="question">
+                                      <div class="question-wrap">
+                                          <p>Question #2: Are you more of a...</p>
+                                      </div>
+                                  </li>
+                                  <li class="quiz-answer low-value" data-quizIndex="2">
+                                      <div class="answer-wrap">
+                                          <p class="answer-text">Tea Drinker</p>
+                                      </div>
+                                  </li>
+                                  <li class="quiz-answer high-value" data-quizIndex="4">
+                                      <div class="answer-wrap">
+                                          <p class="answer-text">Coffee Drinker?</p>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="quiz-step step3">
+                                  <li class="question">
+                                      <div class="question-wrap">
+                                          <p>Question #3: Are you more...</p>
+                                      </div>
+                                  </li>
+                                  <li class="quiz-answer low-value" data-quizIndex="2">
+                                      <div class="answer-wrap">
+                                          <p class="answer-text">Street Smart</p>
+                                      </div>
+                                  </li>
+                                  <li class="quiz-answer high-value" data-quizIndex="4">
+                                      <div class="answer-wrap">
+                                          <p class="answer-text">Book Smart?</p>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="quiz-step step4">
+                                  <li class="question">
+                                      <div class="question-wrap">
+                                          <p>Question #4: Are you more of a...</p>
+                                      </div>
+                                  </li>
+                                  <li class="quiz-answer low-value" data-quizIndex="2">
+                                      <div class="answer-wrap">
+                                          <p class="answer-text"> Pizza person</p>
+                                      </div>
+                                  </li>
+                                  <li class="quiz-answer high-value" data-quizIndex="4">
+                                      <div class="answer-wrap">
+                                          <p class="answer-text">Beer Person?</p>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul id="results">
+                                  <li class="results-inner">
+                                      <p>Your result is:</p>
+                                      <h1></h1>
+                                      <p class="desc"></p>
+                                  </li>
+                              </ul>
                           </div>
                         </section>
+
+
                         <section data-role="section" id="section-sources">
                           <h3 class="heading">Sources</h3>
-                          <ul id="Information">
+                          <ul id="information">
                             <h4>Information</h4>
                             <li>
-                              About Matt Groening, Life in Hell & The Simpsons, Futurama, Disenchantment : https://www.britannica.com/biography/Matt-Groening#ref1081585
+                              About Matt Groening and his works: https://www.britannica.com/biography/Matt-Groening#ref1081585
+                              https://www.biography.com/news/matt-groening-biography-facts
                             </li>
+                            <li>
+                              About Life in Hell:
+                              http://www.slate.com/articles/arts/culturebox/2012/10/matt_groening_s_life_in_hell_a_tribute_in_comics_by_alison_bechdel_tom_tomorrow_and_others_.html
+                            </li>
+                            <li>
+                              About The Simpsons: https://www.imdb.com/title/tt0096697/?ref_=fn_al_tt_1
+                            </li>
+                            <li>
+                              About Futurama: https://www.imdb.com/title/tt0149460/?ref_=fn_al_tt_1
+                            </li>
+                            <li>
+                              About Disenchantment: https://www.imdb.com/title/tt5363918/?ref_=nv_sr_1
+                            </li>
+
+
+
+
+
+
                           </ul>
-                          <ul id="Images">
+                          <ul id="images">
                             <h4>Images</h4>
                             <li>
-
+                              For donut: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjMoKjlx4feAhUFSN8KHaFsDUoQjRx6BAgBEAU&url=https%3A%2F%2Fsignup.com%2Fclient%2Finvitation2%2Fsecure%2F1143429%2Ffalse&psig=AOvVaw2kXQ2lCmOmmbSxG1AFPD-L&ust=1539662305768215
                             </li>
+                            <li>
+                              For beer can: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiW9tjkyIfeAhUBneAKHcFAAXsQjRx6BAgBEAU&url=http%3A%2F%2Fcas-hod.cz%2Fp9314-pivo-duff-beer-0-33l-plech.html&psig=AOvVaw04p0ebYGYGoL3BMyC6AJs1&ust=1539662678213454
+                            </li>
+                            <li>
+                              For Pizza:
+                              https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjb9JCS0ofeAhXvmuAKHcGqCbcQjRx6BAgBEAU&url=http%3A%2F%2Fwww.cc.com%2Fvideo-clips%2Fbvid5b%2Ffuturama-anchovy-pizza&psig=AOvVaw0uYTOnoKvYphSbutO215T9&ust=1539665237453306
+                            </li>
+                            <li>
+                              Maggie Pacifier:
+                              https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjdwLPo04feAhUshOAKHXbmC9AQjRx6BAgBEAU&url=https%3A%2F%2Fgifer.com%2Fen%2F5h21&psig=AOvVaw0LbRW2k5gyQjOpSGqgbroa&ust=1539665674534453
+                            </li>
+                            <li>
+                            House img link: https://ecodiario.eleconomista.es/viralplus/noticias/9317872/08/18/www.liveramp.com/service-privacy-policy/www.indexexchange.com/privacy
+                            </li>
+                            <li>
+                            Binky img: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi4y7Hp2v_dAhUKuFMKHRv6BHEQjRx6BAgBEAU&url=http%3A%2F%2Ftipos-de-cancer.info%2Fsimpsons-matt-groening-life.php&psig=AOvVaw3x_kWfVhsr1j4GJLF53IGm&ust=1539392557533385
+                          </li>
+                          <li>
+                            Futurama Background: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjjx-uE6__dAhUH31MKHahSBIcQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F567383253027579741%2F&psig=AOvVaw2qW_a5TJEBvBOrkzQZ2DVS&ust=1539397043207639
+                          </li>
+                          <li>
+                            Luci img: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjI67_U9__dAhUJrFMKHZSDAW4QjRx6BAgBEAU&url=https%3A%2F%2Fwww.deviantart.com%2Fluxkirigaya%2Fart%2FDisenchantment-Luci-760055201&psig=AOvVaw1GyLIxQOhbYupn1Q6SUG21&ust=1539400436374079
+                          </li>
+                          <li>
+                            Castle img: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwik_uyK-f_dAhWBwFMKHVPyB7gQjRx6BAgBEAU&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt7177814%2Fmediaviewer%2Frm2331932672&psig=AOvVaw2Gy6VAgtYidMQ7VmsXTRX8&ust=1539400746141289
+                          </li>
+                          <li>
+                            Bender gif: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjcjsqp-P_dAhWK61MKHb2NC5AQjRx6BAgBEAU&url=https%3A%2F%2Fgifer.com%2Fen%2F2vDa&psig=AOvVaw0_qyQPNB_P7n0tdUH7dyPM&ust=1539400550880683
+                          </li>
+
                           </ul>
-                          <ul id="Coding Sources">
+                          <ul id="coding">
                             <h4>Coding Sources</h4>
                             <li>
+                              Quiz Plugin: https://codepen.io/anon/pen/JmrVYd
+                            </li>
+                            <li>
+                              Immersive Slider Plugin: https://github.com/peachananr/immersive-slider
+                            </li>
+                            <li>
+                              Responsive Text Plugin:
+                              https://github.com/nathco/jQuery.fontFlex
+                            </li>
+                            <li>
+                              CSS opacity:
+                              https://www.w3schools.com/cssref/css3_pr_opacity.asp
 
                             </li>
                           </ul>
-
-
-
 
                           </section>
 
@@ -261,19 +383,15 @@
 
                         <footer data-role="footer" id="footer"></footer>
 
-                        <script
-                        src="https://code.jquery.com/jquery-3.3.1.min.js"
+                        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
                         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                         crossorigin="anonymous"></script>
                         <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
                         <script type="text/javascript" src="js/jquery.horizonScroll.js"></script>
-                        <script src="quiz/js/slickQuiz-config.js"></script>
-                        <script src="quiz/js/slickQuiz.js"></script>
-                        <script src="quiz/js/master.js"></script>
-                        <script src="js/scripts.js"></script>
+                        <script src="fontFlexPlugin/jQuery.fontFlex.js"></script>
 
+
+                        <script src="js/scripts.js"></script>
 
                       </body>
                       </html>
-
-                      <!--Immersive Slider plugin: https://github.com/peachananr/immersive-slider-->

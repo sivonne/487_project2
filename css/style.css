@@ -5,6 +5,8 @@ html, body {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    font-size: 1em;
+    line-height: 150%
 }
 
 section, header, footer, nav, div, span, ul, li, a {
@@ -66,14 +68,22 @@ button{
   font-family: 'Rajdhani', sans-serif;
   font-weight: bold;
   font-size: 15px;
-  border-style: none;
-  border-radius: 10px;
 
+  border-radius: 10px;
+  border-style:inset;
+  border-color: black;
+  border-width:medium;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 7.5%;
 }
+
 #site-title{
   font-family: 'Rajdhani', sans-serif;
   font-size: 28px;
-  padding-bottom: 2%;
+  padding-bottom: 4%;
 
 
 }
@@ -82,6 +92,7 @@ button{
 }
 #life-h{
   font-family: 'Indie Flower', cursive;
+  color:black;
 }
 #simpsons-h{
   font-family: 'Patrick Hand SC', cursive;
@@ -92,9 +103,7 @@ button{
 #disenchantment-h{
   font-family: 'Fredericka the Great', cursive;
 }
-#groening-h, #life-h, #simpsons-h, #futurama-h, #disenchantment-h {
-  font-size:40px;
-}
+
 
 #section-groening, #section-life, #section-simpsons,
 #section-futurama, #section-disenchantment{
@@ -105,12 +114,67 @@ button{
   'hd hd hd'/*heading*/
   'trait pic info'/*nav menu*/
 }
+
+@media only screen and (max-width: 600px)  {
+  #section-groening, #section-life, #section-simpsons,
+  #section-futurama, #section-disenchantment{
+    display:grid;
+
+       grid-template-columns: 100%;
+       grid-template-rows: 1fr 1fr 1fr 1fr;
+       grid-template-areas:
+       "hd hd"
+       "trait trait"
+       "info info"
+       "pic pic"
+   }
+.heading{
+     grid-area: hd;
+     padding-top: 0px;
+   }
+.pic{
+  grid-area: pic;
+  width:60%;
+}
+.traits{
+  grid-area: trait;
+}
+.info{
+  grid-area: info;
+}
+.trait-list, .info-list {
+  background: rgba(130, 167, 181, 0.8);
+  padding:1%;
+  margin:1%;
+  border-radius: 10px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.shadow{
+  width:20%;
+  z-index:9999;
+  margin-bottom:0px;
+
+}
+   }
+
+
+@media only screen and (max-width: 600px)  {
+.section, #section-sources{
+  margin: 2%;
+
+}
+
+
+
+}
 .heading{
   grid-area: hd;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 5%;
 
 }
 .traits{
@@ -120,12 +184,16 @@ button{
   justify-content: center;
   flex-direction: column;
 }
-.trait-list, .info-p {
-  background: rgba(127, 126, 123, 0.8);
+.trait-list, .info-list {
+  background: rgba(130, 167, 181, 0.8);
   padding:10%;
   margin-bottom: 30%;
   margin-left: 10%;
   margin-right: 10%;
+  border-radius: 10px;
+  font-family: 'Rajdhani', sans-serif;
+
+
 }
 
 .info{
@@ -146,29 +214,31 @@ button{
 #groening{
 width:70%;
 }
-#homer{
+/*#homer:hover{
   width:100%;
-}
+  transform: translateX(400px);
+}*/
 #homer, #bender, #fry, #binky{
 width:100%;
 }
+/*#groening, #homer, #bender, #fry, #binky, #luci{
 
+}*/
 #binky{
   width:60%;
-  outline-style: dotted;
+  outline-style:ridge;
 }
 #bender{
 width:70%;
 }
 #luci{
-width:50%;
+width:55%;
 }
 
 .shadow{
   width:80%;
-  padding-bottom: 2%;
-  opacity:50%;
-  z-index:10;
+  z-index:9999;
+  margin-bottom: 5%;
 
 }
 
@@ -176,23 +246,17 @@ width:50%;
 
 
 
-button{
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
 
-
-}
 #section-main{
     background: #EBC624;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index:9999;
 }
 #section-groening{
-    background: #F7B7D2;
+    background: #F5B161;
 }
 
 #section-life{
@@ -219,13 +283,44 @@ button{
 }
 
 #section-quiz{
-  z-index:10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+#section-sources{
+  box-sizing: content-box;
+  background: #EBC624;
+  display:grid;
+  margin:5%;
+  font-size: 4px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;/*sets height of rows*/
+  grid-template-areas:/*designates areas to certain sections*/
+  'sources'/*heading*/
+  'images'/*nav menu*/
+  'coding'
+}
+
+#information{
+  grid-area: sources;
+
+}
+#images{
+  grid-area: images;
+}
+#coding{
+  grid-area:coding;
 }
 
 
 
 
+#directions{
+  font-family: 'Indie Flower', cursive;
 
+}
 
 
 
@@ -236,39 +331,117 @@ button{
     position: fixed;
     top: 50%;
     margin-top: -24px;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .horizon-prev {
-    left: 25%;
+    left: 35%;
 }
-
 .horizon-next {
-    right: 25%;
+    right: 35%;
 }
 
 
-/*Quiz*/
+@import url(https://fonts.googleapis.com/css?family=Satisfy|Pathway+Gothic+One);
+/* Defaults */
+html,
+body,
 
-#section-quiz{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+#quizzie {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 
 }
-#section-sources{
 
+
+body {
+  background: #677c8a;
+  color: #fff;
 }
 
+h1 {
+  font-family: "Satisfy", "cursive";
+  font-size: 2.5em;
+}
 
-/*House img link: https://ecodiario.eleconomista.es/viralplus/noticias/9317872/08/18/www.liveramp.com/service-privacy-policy/www.indexexchange.com/privacy
-Binky: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi4y7Hp2v_dAhUKuFMKHRv6BHEQjRx6BAgBEAU&url=http%3A%2F%2Ftipos-de-cancer.info%2Fsimpsons-matt-groening-life.php&psig=AOvVaw3x_kWfVhsr1j4GJLF53IGm&ust=1539392557533385
-Futurama Background: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjjx-uE6__dAhUH31MKHahSBIcQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F567383253027579741%2F&psig=AOvVaw2qW_a5TJEBvBOrkzQZ2DVS&ust=1539397043207639
-Luci img: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjI67_U9__dAhUJrFMKHZSDAW4QjRx6BAgBEAU&url=https%3A%2F%2Fwww.deviantart.com%2Fluxkirigaya%2Fart%2FDisenchantment-Luci-760055201&psig=AOvVaw1GyLIxQOhbYupn1Q6SUG21&ust=1539400436374079
-Castle img: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwik_uyK-f_dAhWBwFMKHVPyB7gQjRx6BAgBEAU&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt7177814%2Fmediaviewer%2Frm2331932672&psig=AOvVaw2Gy6VAgtYidMQ7VmsXTRX8&ust=1539400746141289
+h2,
+p {
+  font-family: "Pathway Gothic One", "sans-serif";
+  font-size: 2em;
+}
 
-Bender gif: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjcjsqp-P_dAhWK61MKHb2NC5AQjRx6BAgBEAU&url=https%3A%2F%2Fgifer.com%2Fen%2F2vDa&psig=AOvVaw0_qyQPNB_P7n0tdUH7dyPM&ust=1539400550880683
+h1,
+h2,
+p {
+  text-align: center;
+  display: block;
+  width: auto;
+  margin: 1%;
+}
 
-CSS opacity:
-https://www.w3schools.com/cssref/css3_pr_opacity.asp
+#quizzie {
+  padding: 5% 0;
+  /* Individual Steps/Sections */
+  /* Content */
+}
+#quizzie ul {
+  list-style: none;
+  display: block;
+  width: auto;
+  margin: 2% 2%;
+  padding: 2%;
+  overflow: auto;
+  display: none;
+  /* Step Questions and Answer Options */
+}
+#quizzie ul.current {
+  display: block;
+}
+#quizzie ul li {
+  display: inline-block;
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+  overflow: auto;
+  text-align: center;
+}
+#quizzie ul li.quiz-answer {
+  cursor: pointer;
+}
+#quizzie ul li.question, #quizzie ul li.results-inner {
+  display: block;
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2%;
+}
+#quizzie ul li.results-inner {
+  padding: 5% 2%;
+}
+#quizzie ul li.results-inner img {
+  width: 250px;
+}
+#quizzie ul li:last-child {
+  margin-right: 0;
+}
+#quizzie .question-wrap, #quizzie .answer-wrap {
+  display: block;
+  padding: 1%;
+  margin: 1em 10%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#quizzie .answer-wrap {
+  background: Turquoise;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+#quizzie .answer-wrap:hover {
+  background: DarkTurquoise;
+}
