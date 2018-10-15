@@ -1,18 +1,16 @@
-$(document).ready(function(){
-
-/*Plug in for Slider*/
+$(function(){
+/*Plug in for Slider, horizontal functionality*/
 $('section').horizon();
 $(document).on('click', '.go-to-1', function () {
     $(document).horizon('scrollTo', 'section-groening');
   });
 
 
-/*Plugin for Font-Resizing for Responsiveness:*/
+/*Plugin for Font-Resizing for Responsiveness, setting sizes for different device sizes:*/
 
 $(function() {
   $('h3').fontFlex(40, 60, 90);
-  $('.traits-list').fontFlex(10,22,40);
-  $('.info-list').fontFlex(15,22,40);
+  $('.trait-list').fontFlex(12,22,40);
 });
 
 /*Quiz Plugin*/
@@ -125,18 +123,6 @@ function calcResults(totalScore) {
         }
     }
 }
-
-/*Responsive Navbar*/
-function classToggle() {
-  const navs = document.querySelectorAll('.Navbar__Items')
-
-  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-}
-document.querySelector('.Navbar__Link-toggle')
-  .addEventListener('click', classToggle);
-
-
-
 
 
 

@@ -6,13 +6,15 @@ html, body {
     margin: 0;
     overflow: hidden;
     font-size: 1em;
-    line-height: 150%
+    line-height: 150%;
 }
 
 section, header, footer, nav, div, span, ul, li, a {
     box-sizing: border-box;
 }
-
+.nav-h{
+  font-family: 'Rajdhani', sans-serif;
+}
 
 header {
     position: fixed;
@@ -25,6 +27,7 @@ header {
 header nav {
   background:#4375DC;
   font-size: 10px;
+
 }
 
 header ul {
@@ -36,6 +39,7 @@ header ul {
 header ul li {
     display: inline-block;
     padding: 0 20px;
+
 }
 
 header ul a {
@@ -43,7 +47,7 @@ header ul a {
     text-decoration: none;
     color:white;
     height: 50px;
-    display: block;
+    display: inline-block;
     position: relative;
 }
 
@@ -52,15 +56,18 @@ header ul a span {
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
+
 }
 
 section {
     float: left;
     display: block;
     height: 100%;
-    padding: 75px 0 0 0;
+    width:100%;
+    padding-top: 75px;
     margin: 0;
 }
+
 button{
   background:#204CA8;
   font-family: 'Rajdhani', sans-serif;
@@ -78,7 +85,7 @@ button{
   margin-bottom: 7.5%;
 }
 /*Responsive Nav Bar*/
-.Navbar {
+/*.Navbar {
   display: flex;
   padding: 16px;
   font-family: sans-serif;
@@ -89,12 +96,6 @@ button{
 }
 .Navbar__Items {
   display: flex;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
-    flex-direction: row;
-    flex-flow: row;
-    justify-content:space-between;
-    align-items: center;
 }
 .Navbar__Items--right {
   margin-left:auto;
@@ -122,9 +123,10 @@ button{
     position: absolute;
     cursor: pointer;
    }
-}
+}*/
 #logo{
-  width:20%;
+width:30%;
+left:0;
 }
 
 
@@ -150,12 +152,15 @@ button{
 }
 #simpsons-h{
   font-family: 'Patrick Hand SC', cursive;
+  color:white;
 }
 #futurama-h{
   font-family: 'Press Start 2P', cursive;
+  color:red;
 }
 #disenchantment-h{
   font-family: 'Fredericka the Great', cursive;
+  color:gold;
 }
 
 
@@ -169,26 +174,29 @@ button{
   'trait pic info'/*nav menu*/
 }
 
-@media only screen and (max-width: 600px)  {
-  #section-groening, #section-life, #section-simpsons,
+/*Stack the layout on small devices/viewports. */
+@media only screen and (max-width: 575px) {
+#section-groening, #section-life, #section-simpsons,
   #section-futurama, #section-disenchantment{
     display:grid;
-
-       grid-template-columns: 100%;
-       grid-template-rows: 1fr 1fr 1fr 1fr;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 10% 1fr 1fr;
        grid-template-areas:
        "hd hd"
-       "trait trait"
-       "info info"
        "pic pic"
+       "info trait"
    }
+   nav{
+     display:none;
+   }
+
 .heading{
      grid-area: hd;
      padding-top: 0px;
    }
 .pic{
   grid-area: pic;
-  width:60%;
+  width:100%;
 }
 .traits{
   grid-area: trait;
@@ -196,26 +204,23 @@ button{
 .info{
   grid-area: info;
 }
-.trait-list, .info-list {
-  background: rgba(130, 167, 181, 0.8);
-  padding:1%;
-  margin:1%;
-  border-radius: 10px;
-  font-family: 'Rajdhani', sans-serif;
-}
 
 .shadow{
   width:20%;
-  z-index:9999;
   margin-bottom:0px;
 
 }
    }
 
 
-@media only screen and (max-width: 600px)  {
+
+
+
+
+@media only screen and (max-width: 575px)  {
 .section, #section-sources{
   margin: 2%;
+  margin-bottom: 3%;
 
 }
 
@@ -240,11 +245,11 @@ button{
 }
 .trait-list, .info-list {
   background: rgba(130, 167, 181, 0.8);
-  padding:10%;
-  margin-bottom: 30%;
+  padding:8%;
+  margin-bottom: 100px;
   margin-left: 10%;
   margin-right: 10%;
-  border-radius: 10px;
+  border-radius: 8px;
   font-family: 'Rajdhani', sans-serif;
 
 
@@ -264,22 +269,22 @@ button{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 50px;
+
 }
 #groening{
-width:70%;
+width:50%;
 }
 /*#homer:hover{
   width:100%;
   transform: translateX(400px);
 }*/
-#homer, #bender, #fry, #binky{
-width:100%;
-}
+
 /*#groening, #homer, #bender, #fry, #binky, #luci{
 
 }*/
 #binky{
-  width:60%;
+  width:50%;
   outline-style:ridge;
 }
 #bender{
@@ -344,34 +349,28 @@ width:55%;
   background:#EBC624;
 }
 #section-sources{
-
   background: #204CA8;
-  display:grid;
-  font-size: 3px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;/*sets height of rows*/
-  grid-template-areas:/*designates areas to certain sections*/
-  'heading'
-  'sources'/*heading*/
-  'images'/*nav menu*/
-  'coding'
-}
-#source-h{
-  grid-area:heading;
-}
-#information{
-  grid-area: sources;
-
-}
-#images{
-  grid-area: images;
-}
-#coding{
-  grid-area:coding;
-}
+  display:flex;
+  flex-direction: column;
+  align-items:stretch;
+  justify-content:center;
+  font-family: 'Rajdhani', sans-serif;
 
 
 
+}
+
+#coding, #images, #information{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  padding-top: 3%;
+  font-family: 'Rajdhani', sans-serif;
+
+
+
+}
 
 #directions{
   font-family: 'Indie Flower', cursive;
@@ -395,6 +394,14 @@ width:55%;
 }
 .horizon-next {
     right: 35%;
+}
+@media only screen and (max-width: 575px) {
+.horizon-prev {
+left:2%;
+}
+.horizon-next {
+  right: 2%;
+}
 }
 
 
