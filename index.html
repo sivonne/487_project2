@@ -9,6 +9,9 @@
 
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Indie+Flower|Itim|Monoton|Patrick+Hand+SC|Poiret+One|Press+Start+2P|Rajdhani:400,700|Teko" rel="stylesheet">
+  <link rel="stylesheet" href="animated_modal_plugin/demo/css/animate.min.css">
+
+
 </head>
 
 <body>
@@ -83,7 +86,28 @@
                 <div class="pic">
                   <img id="groening"src="gif/groening.png"alt="Groening">
                   <img class="shadow"src="img/shadow.png"alt="Shadow">
-                </div>
+
+                    <!--Call your modal-->
+                    <button id="fact-button"><a id="demo01" href="#animatedModal">Read some info!</a></button>
+                      <!--DEMO01-->
+                      <div id="animatedModal">
+                          <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+                          <div class="close-animatedModal">X</div>
+                          <div class="modal-content">
+                            <ul class="facts">
+                              <h3 class="heading"id="groening-h">A Bit about Groening</h3>
+                              <li>Born: February 15, 1953
+                                <li>Major Works: Life in Hell (1977–2012),The Simpsons (1989–present), Futurama (1999–2003, 2010–13), Disenchantment (2018-present)</li>
+                                <li>Run-time: Still running</li>
+                                <li>Education: Studied Journalism at Evergreen State College, graduated in 1977</li>
+                                <li>Co-creators: James L. Brooks, Sam Simon</li>
+                                  <li>
+                                    Groening worked as a music journalist until he decided to pursue his artistic interests, starting first with the comic Life is Hell. Some of his main inspirations for his art were Walt Disney and Charles M. Schulz. After being asked by James L. Brooks to make the Life in Hell comic a TV strip for the Tracey Ullman Show, Groening decided to make the Simpsons, an original show based on his own family.
+                                  </li>
+                              </ul>
+                            </div>
+                      </div>
+                  </div>
                 <div class="traits">
                   <ul class="trait-list">
                     <li>Born: February 15, 1953
@@ -104,6 +128,25 @@
                   <div class="pic">
                     <img id="binky"src="img/binky.jpg"alt="Binky">
                     <img class="shadow"src="img/shadow.png"alt="Shadow">
+                    <!--Call your modal-->
+                    <button id="fact-button1"><a id="demo02" href="#animatedModal1">Read some info!</a></button>
+                      <!--DEMO01-->
+                      <div id="animatedModal1">
+                          <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+                          <div class="close-animatedModal1">X</div>
+                          <div class="modal-content">
+                            <ul class="facts">
+                              <h3 class="heading"id="life-h">Life in Hell</h3>
+                              <li>Major Characters: <br />Binky, Akbar, Jeff, </li>
+                              <li>Major Topics: <br />worklife, life in Los Angeles</li>
+                              <li>Release Dates: <br />In 1977, Groening self-published a comic book and sold them at a local record store before they were taken on by Wet Magazine in 1978.</li>
+                              <li>Run-time: 1977-2012</li>
+                              <li>Number of Installments: 1,669 (in over 250 publications)</li>
+                              <li>Notable Fans: James L. Brooks (who later prompted Groening to create The Simpsons)</li>
+
+                              </ul>
+
+                            </div>
                   </div>
                   <ul class="trait-list">
                     <li>Major Characters: <br />Binky, Akbar, Jeff, </li>
@@ -126,6 +169,8 @@
                     <div class="pic">
                       <img id="homer"src="gif/homer.gif"alt="Homer">
                       <img class="shadow"src="img/shadow.png"alt="Shadow">
+                      <button class="facts">Read some facts!</button>
+
                     </div>
                     <div class="traits">
                       <ul class="trait-list">
@@ -155,6 +200,8 @@
                       <div class="pic">
                         <img id="bender"src="gif/bender.gif"alt="Bender">
                         <img class="shadow"src="img/shadow.png"alt="Shadow">
+                        <button class="facts">Read some facts!</button>
+
                       </div>
                       <div class="traits">
                         <ul class="trait-list">
@@ -178,6 +225,8 @@
                         <div class="pic">
                           <img id="luci"src="gif/disenchantment.gif"alt="Disenchantment">
                           <img class="shadow"src="img/shadow.png"alt="Shadow">
+                          <button class="facts">Read some facts!</button>
+
                         </div>
                         <div class="traits">
                           <ul class="trait-list">
@@ -355,14 +404,11 @@
 
 
 
-                        <!--<footer data-role="footer" id="footer">
+                      <footer data-role="footer" id="footer">
 
-                              <a href="#sivonne-ward.com">
-                                <span>
-                            <img id="logo"src="img/logo.png"alt="Logo">
-                            </span></a>
 
-                        </footer>-->
+
+                        </footer>
 
                         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
                         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -370,6 +416,8 @@
                         <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
                         <script type="text/javascript" src="js/jquery.horizonScroll.js"></script>
                         <script src="fontFlexPlugin/jQuery.fontFlex.js"></script>
+
+                        <script src="animated_modal_plugin/animatedModal.min.js"></script>
                         <script src="js/scripts.js"></script>
 
                       </body>

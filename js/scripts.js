@@ -1,6 +1,13 @@
 $(function(){
 /*Plug in for Slider, horizontal functionality*/
 $('section').horizon();
+
+//Plugin for Cool Modal Windows:
+$("#demo01").animatedModal();
+$("#demo02").animatedModal1();
+
+
+
 $(document).on('click', '.go-to-1', function () {
     $(document).horizon('scrollTo', 'section-groening');
   });
@@ -11,6 +18,11 @@ $(document).on('click', '.go-to-1', function () {
 $(function() {
   $('h3').fontFlex(40, 60, 90);
   $('.trait-list').fontFlex(12,22,40);
+  $('#information').fontFlex(12,22,40);
+  $('#images').fontFlex(12,22,40);
+  $('#coding').fontFlex(12,22,40);
+
+
 });
 
 /*Quiz Plugin*/

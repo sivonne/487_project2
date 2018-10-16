@@ -84,46 +84,11 @@ button{
   padding-bottom: 1%;
   margin-bottom: 7.5%;
 }
-/*Responsive Nav Bar*/
-/*.Navbar {
-  display: flex;
-  padding: 16px;
-  font-family: sans-serif;
-  color: white;
+
+#fact-button, #fact-button1{
+  display:none;
 }
-.Navbar__Link {
-  padding-right: 8px;
-}
-.Navbar__Items {
-  display: flex;
-}
-.Navbar__Items--right {
-  margin-left:auto;
-}
-.Navbar__Link-toggle {
-  display: none;
-}
-@media only screen and (max-width: 768px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
-  }
-.Navbar__Items {
-    display:none;
-  }
-.Navbar__Items--right {
-    margin-left:0;
-  }
-.Navbar__ToggleShow {
-    display: flex;
-  }
-.Navbar__Link-toggle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
-   }
-}*/
+
 #logo{
 width:30%;
 left:0;
@@ -163,7 +128,15 @@ left:0;
   color:gold;
 }
 
-
+.modal-content{
+  background: rgba(130, 167, 181, 0.8);
+  padding:2%;
+  margin-bottom: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 8px;
+  font-family: 'Rajdhani', sans-serif;
+}
 #section-groening, #section-life, #section-simpsons,
 #section-futurama, #section-disenchantment{
   display:grid;
@@ -176,41 +149,73 @@ left:0;
 
 /*Stack the layout on small devices/viewports. */
 @media only screen and (max-width: 575px) {
-#section-groening, #section-life, #section-simpsons,
-  #section-futurama, #section-disenchantment{
+  #section-groening{
     display:grid;
-       grid-template-columns: 1fr 1fr;
-       grid-template-rows: 10% 1fr 1fr;
+       grid-template-columns: 100%;
+       grid-template-rows: 20% 1fr;
        grid-template-areas:
-       "hd hd"
-       "pic pic"
-       "info trait"
+       "hd"
+       "pic"
    }
    nav{
      display:none;
    }
-
-.heading{
-     grid-area: hd;
-     padding-top: 0px;
+   #fact-button{
+     display:block;
    }
-.pic{
-  grid-area: pic;
-  width:100%;
-}
-.traits{
-  grid-area: trait;
-}
-.info{
-  grid-area: info;
-}
-
-.shadow{
-  width:20%;
-  margin-bottom:0px;
-
-}
+  .traits, .info{
+    display:none;
+  }
+  .heading{
+       grid-area: hd;
+       padding-top: 0px;
+     }
+  .pic{
+    grid-area: pic;
+    width:100%;
+  }
+  .shadow{
+    width:20%;
+    margin-bottom:0px;
+  }
+     }
+   /*Stack the layout on small devices/viewports. */
+   @media only screen and (max-width: 575px) {
+   #section-life{
+       display:grid;
+          grid-template-columns: 100%;
+          grid-template-rows: 20% 1fr;
+          grid-template-areas:
+          "hd"
+          "pic"
+      }
+      nav{
+        display:none;
+      }
+      #fact-button1{
+        display:block;
+      }
+   .traits, .info{
+     display:none;
    }
+   .heading{
+        grid-area: hd;
+        padding-top: 0px;
+      }
+   .pic{
+     grid-area: pic;
+     width:100%;
+   }
+   .shadow{
+     width:20%;
+     margin-bottom:0px;
+   }
+      }
+/*#section-life, #section-simpsons,
+  #section-futurama, #section-disenchantment*/
+
+
+
 
 
 
@@ -237,11 +242,9 @@ left:0;
 
 }
 .traits{
+  display:block;
   grid-area: trait;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
 }
 .trait-list, .info-list {
   background: rgba(130, 167, 181, 0.8);
@@ -256,11 +259,9 @@ left:0;
 }
 
 .info{
+  display:block;
   grid-area: info;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
 }
 
 .pic{
@@ -350,21 +351,30 @@ width:55%;
 }
 #section-sources{
   background: #204CA8;
-  display:flex;
-  flex-direction: column;
-  align-items:stretch;
-  justify-content:center;
+  display:grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 10% 1fr 1fr 1fr;
+     grid-template-areas:
+     "hd"
+     "info"
+     "img"
+     "code"
+
   font-family: 'Rajdhani', sans-serif;
 
 
 
 }
+#information{
+  grid-area
+}
+#coding{
 
+}
+#images{
+
+}
 #coding, #images, #information{
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:center;
   padding-top: 3%;
   font-family: 'Rajdhani', sans-serif;
 
