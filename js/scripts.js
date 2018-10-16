@@ -4,7 +4,82 @@ $('section').horizon();
 
 //Plugin for Cool Modal Windows:
 $("#demo01").animatedModal();
-$("#demo02").animatedModal1();
+$("#demo02").animatedModal({
+               modalTarget:'modal-02',
+               animatedIn:'lightSpeedIn',
+               animatedOut:'bounceOutDown',
+               color:'#3498db',
+               // Callbacks
+               beforeOpen: function() {
+                   console.log("The animation was called");
+               },
+               afterOpen: function() {
+                   console.log("The animation is completed");
+               },
+               beforeClose: function() {
+                   console.log("The animation was called");
+               },
+               afterClose: function() {
+                   console.log("The animation is completed");
+               }
+           });
+$("#demo03").animatedModal({
+    modalTarget:'modal-03',
+    animatedIn:'lightSpeedIn',
+    animatedOut:'bounceOutDown',
+    color:'#3498db',
+    // Callbacks
+    beforeOpen: function() {
+        console.log("The animation was called");
+    },
+    afterOpen: function() {
+        console.log("The animation is completed");
+    },
+    beforeClose: function() {
+        console.log("The animation was called");
+    },
+    afterClose: function() {
+        console.log("The animation is completed");
+    }
+});
+$("#demo04").animatedModal({
+    modalTarget:'modal-04',
+    animatedIn:'lightSpeedIn',
+    animatedOut:'bounceOutDown',
+    color:'#3498db',
+    // Callbacks
+    beforeOpen: function() {
+        console.log("The animation was called");
+    },
+    afterOpen: function() {
+        console.log("The animation is completed");
+    },
+    beforeClose: function() {
+        console.log("The animation was called");
+    },
+    afterClose: function() {
+        console.log("The animation is completed");
+    }
+});
+$("#demo05").animatedModal({
+    modalTarget:'modal-05',
+    animatedIn:'lightSpeedIn',
+    animatedOut:'bounceOutDown',
+    color:'#3498db',
+    // Callbacks
+    beforeOpen: function() {
+        console.log("The animation was called");
+    },
+    afterOpen: function() {
+        console.log("The animation is completed");
+    },
+    beforeClose: function() {
+        console.log("The animation was called");
+    },
+    afterClose: function() {
+        console.log("The animation is completed");
+    }
+});
 
 
 
