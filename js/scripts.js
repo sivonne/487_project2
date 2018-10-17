@@ -2,7 +2,7 @@ $(function(){
 /*Plug in for Slider, horizontal functionality*/
 $('section').horizon();
 
-//Plugin for Cool Modal Windows:
+//Plugin for Cool Modal Windows, tells the modal what to do when button is clicked:
 $("#demo01").animatedModal();
 $("#demo02").animatedModal({
                modalTarget:'modal-02',
@@ -82,7 +82,7 @@ $("#demo05").animatedModal({
 });
 
 
-
+//tells the button on the main page to go to page 2 when clicked
 $(document).on('click', '.go-to-1', function () {
     $(document).horizon('scrollTo', 'section-groening');
   });
@@ -93,10 +93,9 @@ $(document).on('click', '.go-to-1', function () {
 $(function() {
   $('h3').fontFlex(40, 60, 90);
   $('.trait-list').fontFlex(12,22,40);
-  $('#information').fontFlex(12,22,40);
-  $('#images').fontFlex(12,22,40);
-  $('#coding').fontFlex(12,22,40);
-
+  $('#information').fontFlex(12,15,20);
+  $('#coding').fontFlex(12,15,20);
+  $('#images').fontFlex(12,15,20);
 
 });
 
@@ -110,7 +109,7 @@ var resultOptions = [
     {   title: 'You Are a Fry (no not the snack!)',
         desc: '<p>Here, have some pizza!</p><img src="img/pizza.jpg"/>'},
     {   title: 'You Are a Marge!',
-        desc: '<p>Here, have some Tea</p><img src="https://i.imgur.com/NH5cunw.png"/>'},
+        desc: '<p>Here, have some Tea</p><img src="gif/marge.gif"/>'},
     {   title: 'You Are A Binky (hehe)',
         desc: '<p>Here, have a binky.</p><img src="img/binky.gif"/>'}
 ];

@@ -301,24 +301,39 @@ left:2%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background:#EBC624;
+  background:#204CA8;
 }
 /*sets up grid for sources and background and fonts*/
 #section-sources{
-  background: #204CA8;
-
+  background: #EBC624 ;
+  display:grid;
   font-family: 'Rajdhani', sans-serif;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 1fr 1fr;
+  grid-template-areas:
+  "hd hd"
+  "info img"
+  "code img"
 }
 #source-h{
-}
-#information{
-  grid-area:info;
+  grid-area:hd;
 }
 #coding{
   grid-area:code;
+  margin-left:50%;
+  margin-top: 5%;
+
 }
 #images{
   grid-area:img;
+  margin-top: 5%;
+
+}
+#information{
+  grid-area:info;
+margin-left:50%;
+margin-top: 5%;
+
 }
 #coding, #images, #information{
   font-family: 'Rajdhani', sans-serif;
