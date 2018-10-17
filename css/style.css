@@ -1,27 +1,27 @@
 /*sets up sections for slides*/
 html, body {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    font-size: 1em;
-    line-height: 150%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-size: 1em;
+  line-height: 150%;
 }
 
 section, header, footer, nav, div, span, ul, li, a {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .nav-h{
   font-family: 'Rajdhani', sans-serif;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: #f2f2f2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #f2f2f2;
 }
 
 header nav {
@@ -31,41 +31,41 @@ header nav {
 }
 
 header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 header ul li {
-    display: inline-block;
-    padding: 0 20px;
+  display: inline-block;
+  padding: 0 20px;
 
 }
 
 header ul a {
-    font-weight: 700;
-    text-decoration: none;
-    color:white;
-    height: 50px;
-    display: inline-block;
-    position: relative;
+  font-weight: 700;
+  text-decoration: none;
+  color:white;
+  height: 50px;
+  display: inline-block;
+  position: relative;
 }
 
 header ul a span {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
 
 }
 
 section {
-    float: left;
-    display: block;
-    height: 100%;
-    width:100%;
-    padding-top: 75px;
-    margin: 0;
+  float: left;
+  display: block;
+  height: 100%;
+  width:100%;
+  padding-top: 75px;
+  margin: 0;
 }
 /*sets up button on first page*/
 button{
@@ -132,70 +132,70 @@ button{
   'hd hd hd'/*heading*/
   'trait pic info'/*nav menu*/
 }
-  .heading{
-    grid-area: hd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 5%;
-  }
-  .traits{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-direction: column;
-    grid-area: trait;
-  }
-  .info{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-direction: column;
-    grid-area: info;
-  }
-  .pic{
-    grid-area: pic;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-  /*sets up border, background, padding for traits and info on each character slide*/
-  .trait-list, .info-list {
-    background: rgba(130, 167, 181, 0.8);
-    padding:8%;
-    margin-bottom: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 8px;
-    font-family: 'Rajdhani', sans-serif;
-  }
+.heading{
+  grid-area: hd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5%;
+}
+.traits{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-direction: column;
+  grid-area: trait;
+}
+.info{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-direction: column;
+  grid-area: info;
+}
+.pic{
+  grid-area: pic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+/*sets up border, background, padding for traits and info on each character slide*/
+.trait-list, .info-list {
+  background: rgba(130, 167, 181, 0.8);
+  padding:8%;
+  margin-bottom: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 8px;
+  font-family: 'Rajdhani', sans-serif;
+}
 
 /*Stacks the character layouts on small devices/viewports. */
 @media only screen and (max-width: 575px) {
-#section-groening, #section-life, #section-simpsons,
+  #section-groening, #section-life, #section-simpsons,
   #section-futurama, #section-disenchantment{
     display:grid;
-       grid-template-columns: 100%;
-       grid-template-rows: 20% 1fr;
-       grid-template-areas:
-       "hd"
-       "pic"
-   }
-   nav{
-     display:none;
-   }
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 1fr;
+    grid-template-areas:
+    "hd"
+    "pic"
+  }
+  nav{
+    display:none;
+  }
 
-/*hides the info paragraph*/
+  /*hides the info paragraph*/
   .traits, .info{
     display:none;
   }
   .heading{
-       grid-area: hd;
-       padding-top: 0px;
-    }
+    grid-area: hd;
+    padding-top: 0px;
+  }
   .pic{
     grid-area: pic;
     width:100%;
@@ -208,24 +208,24 @@ button{
 /*sets up mobile versions for sections for quiz and sources*/
 
 @media only screen and (max-width: 575px)  {
-#section-quiz, #section-sources{
-  margin: 2%;
-  margin-bottom: 3%;
-}
+  #section-quiz, #section-sources{
+    margin: 2%;
+    margin-bottom: 3%;
+  }
 }
 /*sets up sizing for images for each character and their shadows*/
 #groening{
-width:50%;
+  width:50%;
 }
 #binky{
   width:50%;
   outline-style:ridge;
 }
 #bender{
-width:55%;
+  width:55%;
 }
 #luci{
-width:55%;
+  width:55%;
 }
 .shadow{
   width:80%;
@@ -237,12 +237,12 @@ width:55%;
 /*sets up directions for main page*/
 
 #section-main{
-    background: #EBC624;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index:9999;
+  background: #EBC624;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index:9999;
 }
 /*sets up fonts for main page directions*/
 #directions{
@@ -250,34 +250,34 @@ width:55%;
 }
 /*sets up left and right arrows*/
 .horizon-prev, .horizon-next {
-    position: fixed;
-    top: 50%;
-    margin-top: -24px;
-    z-index: 9998;
+  position: fixed;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 9998;
 }
 
 .horizon-prev {
-    left: 35%;
+  left: 35%;
 }
 .horizon-next {
-    right: 35%;
+  right: 35%;
 }
 /*sets up left and right arrows' for mobile view*/
 
 @media only screen and (max-width: 575px) {
-.horizon-prev {
-left:2%;
-}
-.horizon-next {
-  right: 2%;
-}
+  .horizon-prev {
+    left:2%;
+  }
+  .horizon-next {
+    right: 2%;
+  }
 }
 #section-groening{
-    background: #F5B161;
+  background: #F5B161;
 }
 
 #section-life{
-    background: white;
+  background: white;
 }
 #section-simpsons{
   background-image: url(../img/house.png);
@@ -285,9 +285,9 @@ left:2%;
   background-size: cover;
 }
 #section-futurama{
-    background-image: url(../img/fut-back.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
+  background-image: url(../img/fut-back.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 #section-disenchantment {
   background-image: url(../img/castle.jpg);
@@ -331,8 +331,8 @@ left:2%;
 }
 #information{
   grid-area:info;
-margin-left:50%;
-margin-top: 5%;
+  margin-left:50%;
+  margin-top: 5%;
 
 }
 #coding, #images, #information{
