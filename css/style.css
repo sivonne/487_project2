@@ -306,11 +306,10 @@ left:2%;
 /*sets up grid for sources and background and fonts*/
 #section-sources{
   background: #204CA8;
-  
+
   font-family: 'Rajdhani', sans-serif;
 }
 #source-h{
-  grid-area:hd;
 }
 #information{
   grid-area:info;
@@ -326,7 +325,7 @@ left:2%;
 }
 
 
-
+/*From here on, gives plugin details for Quiz (called quizzie)*/
 @import url(https://fonts.googleapis.com/css?family=Satisfy|Pathway+Gothic+One);
 /* Defaults */
 html,

@@ -2,19 +2,15 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!--<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta content="text/html; charset=utf-8" http-equiv="content-type">
-
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Indie+Flower|Itim|Monoton|Patrick+Hand+SC|Poiret+One|Press+Start+2P|Rajdhani:400,700|Teko" rel="stylesheet">
   <link rel="stylesheet" href="animated_modal_plugin/demo/css/animate.min.css">
-
-
 </head>
 
 <body>
+  <!--sets up nav bar sections with Immersive Slider Plugin-->
   <header data-role="header" id="header">
     <nav class="menu">
       <!--Responsive nav bar-->
@@ -71,24 +67,25 @@
                     </div>
                   </nav>
                 </header>
-
+<!--sets up left and right arrows-->
                 <div class="horizon-prev"><img src="img/l-arrow.png"></div>
                 <div class="horizon-next"><img src="img/r-arrow.png"></div>
 
-
+<!--sets up section for main page, with title, button for starting slideshow and directions-->
                 <section data-role="section" id="section-main">
                   <h1 id="site-title">the evolution of Matt Groening's animations</h1>
                   <button class="go-to-1">start</button>
                   <h4 id="directions">(scroll, use arrow buttons or nav to navigate)</h4>
                 </section>
+                <!--sets up section for groening, with title, button for modal window (to make responsive), photo and  information-->
                 <section data-role="section" id="section-groening">
                   <h3 class="heading"id="groening-h">A Bit about Groening</h3>
                   <div class="pic">
                     <img id="groening"src="gif/groening.png"alt="Groening">
                     <img class="shadow"src="img/shadow.png"alt="Shadow">
+<!--button for modal window from Animated Modal Plugin (meant for repsonsiveness, though I couldn't figure out how to fully hide it on full screen)-->
                     <button class="fact-button"><a id="demo01" href="#animatedModal">Learn about Matt</a></button>
                     <div id="animatedModal">
-                      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
                       <div  id="btn-close-modal" class="close-animatedModal">
                         x
                       </div>
@@ -107,6 +104,7 @@
                         </div>
                       </div>
                     </div>
+                    <!--information on left side of photo-->
                     <div class="traits">
                       <ul class="trait-list">
                         <li>Born: February 15, 1953
@@ -117,25 +115,26 @@
                         </ul>
                       </div>
                       <div class="info">
+                        <!--info on right side-->
                         <ul class="trait-list">
                           Groening worked as a music journalist until he decided to pursue his artistic interests, starting first with the comic Life is Hell. Some of his main inspirations for his art were Walt Disney and Charles M. Schulz. After being asked by James L. Brooks to make the Life in Hell comic a TV strip for the Tracey Ullman Show, Groening decided to make the Simpsons, an original show based on his own family.
                         </ul>
                       </div>
                     </section>
+
+
+                    <!--sets up section for Life in Hell-->
                     <section data-role="section" id="section-life">
                       <h3 class="heading"id="life-h">Life in Hell</h3>
                       <div class="pic">
                         <img id="binky"src="img/binky.jpg"alt="Binky">
                         <img class="shadow"src="img/shadow.png"alt="Shadow">
-                        <!--Call your modal-->
+                        <!--button for modal window (meant for repsonsiveness, though I couldn't figure out how to fully hide it on full screen)-->
                         <button class="fact-button"><a id="demo02" href="#modal-02">Learn about Binky</a></button>
                         <!--DEMO02-->
                         <div id="modal-02">
                           <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-                          <div  id="btn-close-modal" class="close-modal-02">
-                            x
-                          </div>
-
+                          <div  id="btn-close-modal" class="close-modal-02">x</div>
                           <div class="modal-content">
                             <ul class="facts">
                               <h3 class="heading"id="life-h">Life in Hell</h3>
@@ -145,34 +144,37 @@
                               <li>Run-time: 1977-2012</li>
                               <li>Number of Installments: 1,669 (in over 250 publications)</li>
                               <li>Notable Fans: James L. Brooks (who later prompted Groening to create The Simpsons)</li>
-
                             </ul>
-
                           </div>
                         </div>
                       </div>
+                      <!--info on left of pic-->
                     <div class="traits">
                         <ul class="trait-list">
                           <li>Major Characters: <br />Binky, Akbar, Jeff, </li>
                           <li>Major Topics: <br />worklife, life in Los Angeles</li>
                           <li>Release Dates: <br />In 1977, Groening self-published a comic book and sold them at a local record store before they were taken on by Wet Magazine in 1978.</li>
-
                         </ul>
                       </div>
+                      <!--info on right of pic-->
                       <div class="info">
                         <ul class="trait-list">
                           <li>Run-time: 1977-2012</li>
                           <li>Number of Installments: 1,669 (in over 250 publications)</li>
                           <li>Notable Fans: James L. Brooks (who later prompted Groening to create The Simpsons)</li>
-
                         </ul>
                       </div>
                     </section>
+
+                    <!--section for the Simpsons-->
                     <section data-role="section" id="section-simpsons">
                       <h3 class="heading"id="simpsons-h">The Simpsons</h3>
                       <div class="pic">
                         <img id="homer"src="gif/homer.gif"alt="Homer">
                         <img class="shadow"src="img/shadow.png"alt="Shadow">
+
+                        <!--sets up modal window and button-->
+
                         <button class="fact-button"><a id="demo03" href="#modal-03">Learn about Homer</a></button>
                         <!--DEMO03-->
                         <div id="modal-03">
@@ -189,12 +191,11 @@
                               <li>Popularity: 8.7/10 on IMDb</li>
                               <li>Co-creators: <br />James L. Brooks, Sam Simon</li>
                               <li>Star Roles:<br /> Dan Castellaneta, Nancy Cartwright, Harry Shearer</li>
-
                             </ul>
-
                           </div>
                         </div>
                       </div>
+                      <!--info to left of pic-->
                       <div class="traits">
                         <ul class="trait-list">
                           <li>Major Characters: <br />Homer, Marge, Lisa, Bart, and Maggie Simpson, Milhouse VanHouten, Principal Skinner, Sideshow Bob, Krusty the Klown</li>
@@ -202,6 +203,7 @@
                           <li>Date of Release: <br />December 17, 1989</li>
                         </ul>
                       </div>
+                      <!--info to right of pic-->
                       <div class="info">
                         <ul class="trait-list">
                           <li>Run-time: Still running</li>
@@ -210,21 +212,18 @@
                           <li>Co-creators: <br />James L. Brooks, Sam Simon</li>
                           <li>Star Roles:<br /> Dan Castellaneta, Nancy Cartwright, Harry Shearer</li>
 
-                          <!--After being asked by James L. Brooks to make the Life in Hell comic a TV strip for the Tracey Ullman Show, Groening decided to make the Simpsons, an original show based on his own family.(source)
-
-                          In 1990, had first of now 20+ Emmys awarded.
-                          In 2007, The Simpsons Movie came out.
-                          In 2009, "it became the longest-running prime-time series in American television history" (Britannica).-->
                         </ul>
                       </div>
                     </section>
+                    <!--section for Futurama-->
                     <section data-role="section" id="section-futurama">
                       <h3 class="heading"id="futurama-h">Futurama</h3>
                       <div class="pic">
                         <img id="bender"src="gif/bender.gif"alt="Bender">
                         <img class="shadow"src="img/shadow.png"alt="Shadow">
+                        <!--sets up modal window/button-->
                         <button class="fact-button"><a id="demo04" href="#modal-04">Learn about Bender</a></button>
-                        <!--DEMO03-->
+                        <!--DEMO04-->
                         <div id="modal-04">
                           <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
                           <div  id="btn-close-modal" class="close-modal-04">x</div>
@@ -243,7 +242,7 @@
                           </div>
                         </div>
                         </div>
-
+                        <!--info left of pic-->
                       <div class="traits">
                         <ul class="trait-list">
                           <li>Major Characters: <br />Fry, Leela, Bender</li>
@@ -251,6 +250,7 @@
                           <li>Date of Release: <br />March 28, 1999</li>
                         </ul>
                       </div>
+                      <!--info right of pic-->
                       <div class="info">
                         <ul class="trait-list">
                           <li>Run-time: 1999-2013</li>
@@ -262,12 +262,13 @@
                       </div>
                     </section>
 
-
+                    <!--section for Disenchantment-->
                     <section data-role="section" id="section-disenchantment">
                       <h3 class="heading"id="disenchantment-h">Disenchantment</h3>
                       <div class="pic">
                         <img id="luci"src="gif/disenchantment.gif"alt="Disenchantment">
                         <img class="shadow"src="img/shadow.png"alt="Shadow">
+                        <!--sets up modal window/button-->
                         <button class="fact-button"><a id="demo05" href="#modal-05">Learn about Luci</a></button>
                         <!--DEMO05-->
                         <div id="modal-05">
@@ -288,12 +289,14 @@
                           </div>
                         </div>
                         </div>
+                        <!--info left of pic-->
                       <div class="traits">
                         <ul class="trait-list">
                           <li>Major Characters: <br />Bean, Luci, Elfo</li>
                           <li>Major Topics: <br />adventure, true love, feeling different, temptations, medieval</li>
                         </ul>
                       </div>
+                      <!--info right of pic-->
                       <div class="info">
                         <ul class="trait-list">
                           <li>Date of Release: <br />August 17, 2018</li>
@@ -306,8 +309,8 @@
                       </div>
                     </section>
 
+                    <!--Section for quiz (using plugin)-->
                     <section data-role="section" id="section-quiz">
-
                       <div id="quizzie">
                         <h1>What Character Are You?</h1>
                         <ul class="quiz-step step1 current"id="quiz-list">
@@ -388,12 +391,11 @@
                       </div>
                     </section>
 
-
+                    <!--Section for sources-->
                     <section data-role="section" id="section-sources">
                       <h3 class="heading"id="source-h">Sources</h3>
                       <div id="information">
                         <h4>Information</h4>
-
                         <a href="https://www.britannica.com/biography/Matt-Groening#ref1081585
                         https://www.biography.com/news/matt-groening-biography-facts">
                         <span>About Matt Groening and his works: </span></a>
@@ -443,6 +445,9 @@
                           <a href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjcjsqp-P_dAhWK61MKHb2NC5AQjRx6BAgBEAU&url=https%3A%2F%2Fgifer.com%2Fen%2F2vDa&psig=AOvVaw0_qyQPNB_P7n0tdUH7dyPM&ust=1539400550880683">
                             <span>Bender gif:</span>
                           </a>
+                          <a href="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjDw-_p1YzeAhUQ2FMKHdlMBNUQjRx6BAgBEAU&url=http%3A%2F%2Fpluspng.com%2Ffree-gifs-and-png-9625.html&psig=AOvVaw19CnaGrHpyMk2SVqekWSAH&ust=1539838032797976">
+                            <span>Homer gif:</span>
+                          </a>
                         </div>
                         <div id="coding">
                           <h4>Coding Sources</h4>
@@ -462,16 +467,12 @@
                             <span>Plugin for Modal Window Pop-ups:</span>
                           </a>
                         </div>
-
                       </section>
-
-
-
+                      <!--Section for footer (not needed, but afraid if I take it out it might mess up plugin structure)-->
                       <footer data-role="footer" id="footer">
-
-
-
                       </footer>
+
+                      <!--various scripts needed for multiple plugins-I apologize for inconsistent folder  organization for plugins-->
 
                       <script src="https://code.jquery.com/jquery-3.3.1.min.js"
                       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -479,7 +480,6 @@
                       <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
                       <script type="text/javascript" src="js/jquery.horizonScroll.js"></script>
                       <script src="fontFlexPlugin/jQuery.fontFlex.js"></script>
-
                       <script src="animated_modal_plugin/animatedModal.min.js"></script>
                       <script src="js/scripts.js"></script>
 
