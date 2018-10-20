@@ -1,3 +1,4 @@
+/*recommended viewing size is full screen or on mobile*/
 /*sets up sections for slides*/
 html, body {
   width: 100%;
@@ -67,6 +68,7 @@ section {
   padding-top: 75px;
   margin: 0;
 }
+
 /*sets up button on first page*/
 button{
   background:#204CA8;
@@ -111,7 +113,8 @@ button{
   color:gold;
 }
 
-
+/*Modal Set-up*/
+/*modal intended to make mobile viewing easier, I just couldn't figure out how to hide it when enlarged because of sectioning issues and layering problems with multiple modals*/
 /*sets up modal background, padding, border*/
 .modal-content{
   background: rgba(130, 167, 181, 0.8);
@@ -121,6 +124,20 @@ button{
   margin-right: 10%;
   border-radius: 8px;
   font-family: 'Rajdhani', sans-serif;
+}
+/*gives some padding to "x" button for modal, changes to pointer cursor*/
+.close-animatedModal, .close-modal-02, .close-modal-03, .close-modal-04, .close-modal-05{
+  font-family: sans-serif;
+  padding: 5%;
+  cursor:pointer;
+  font-size:20px;
+  font-family: 'Rajdhani', sans-serif;
+
+}
+/*takes away default hyperlinking styling*/
+#demo01, #demo02, #demo03, #demo04, #demo05{
+  color:black;
+  text-decoration:none;
 }
 /*sets up CSS grid for the different character slides*/
 #section-groening, #section-life, #section-simpsons,
@@ -254,6 +271,7 @@ button{
   top: 50%;
   margin-top: -24px;
   z-index: 9998;
+  cursor:pointer;
 }
 
 .horizon-prev {

@@ -1,3 +1,9 @@
+/*recommended viewing size is full screen or on mobile*/
+
+
+
+
+
 $(function(){
   /*Plug in for Slider, horizontal functionality*/
   $('section').horizon();
